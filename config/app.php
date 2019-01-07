@@ -161,6 +161,8 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Oseintow\Shopify\ShopifyServiceProvider::class,
+        RocketCode\Shopify\ShopifyServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -223,7 +225,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'Shopify' => Oseintow\Shopify\Facades\Shopify::class,
+        
     ],
 
 ];
