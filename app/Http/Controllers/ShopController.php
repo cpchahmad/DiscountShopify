@@ -31,4 +31,9 @@ class ShopController extends Controller
        public function createDiscount(){
         return view('create_discount');
        }
+
+       public function logout(){
+           session()->flush();
+           return redirect(route('index'));
+       }
 }

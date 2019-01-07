@@ -57,6 +57,20 @@
         </div><!-- card -->
     </div><!-- col-3 -->
 </div>
+
+        <div class="row mg-t-30">
+            <div class="col-3">
+                <label class="section-title">Manage Offers</label>
+            </div>
+            <div class="col-9">
+                <div class="section-wrapper">
+                    <div class="row">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-</div>
+
 @endsection

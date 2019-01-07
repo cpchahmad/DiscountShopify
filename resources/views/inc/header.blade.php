@@ -23,8 +23,8 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
                     <nav class="nav">
-                        <a href="page-settings.html" class="nav-link"><i class="icon ion-ios-gear"></i>Settings</a>
-                        <a href="page-signin.html" class="nav-link"><i class="icon ion-forward"></i> Sign Out</a>
+                        <a href="" class="nav-link"><i class="icon ion-ios-gear"></i>Settings</a>
+                        <a href="{{route('logout')}}" class="nav-link"><i class="icon ion-forward"></i> Sign Out</a>
                     </nav>
                 </div>
             </div>
