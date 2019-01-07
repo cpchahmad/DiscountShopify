@@ -2,7 +2,7 @@
 use Oseintow\Shopify\Facades\Shopify;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('install');
 })->name('index');
 
 Auth::routes();
@@ -38,4 +38,5 @@ Route::get("auth", function(\Illuminate\Http\Request $request) {
 
 Route::group(['middleware' => 'isShop'], function () {
     Route::get('/dashboard', 'ShopController@dashboard')->name('dashboard');
+    Route::get('/create-discount', 'ShopController@createDiscount')->name('discount.create');
 });
