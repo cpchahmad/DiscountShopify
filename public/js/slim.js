@@ -248,7 +248,31 @@ $(function(){
     }
   });
 
-  /////////////////// END: TEMPLATE SETTINGS /////////////////////
 
+        $('.select2').select2();
+        $('.select3').select2();
 
+        $('.volume_discount_select').change(function(){
+            var select_id = $(this).val();
+            if(select_id){
+                $('.select_discount_type').hide();
+                $('.offer_save_wrapper').show();
+                $('#'+select_id).show();
+            }else{
+                $('.select_discount_type').hide();
+                $('.offer_save_wrapper').hide();
+            }
+        });
+
+        $('.volume_discount_addition_btn').click(function(){
+           $('#volume_discount_data').append('<tr><td>'+$('.volume_discount_addition_data').html()+'</tr></td>');
+            return false;
+        });
+
+        $('body').on('click','.delete_addition button', function(){
+            $(this).parents('tr').remove();
+            return false;
+        });
+
+        /////////////////// END: TEMPLATE SETTINGS /////////////////////
 });

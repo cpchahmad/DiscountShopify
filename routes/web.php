@@ -40,4 +40,8 @@ Route::get('/logout', 'ShopController@logout')->name('logout');
 Route::group(['middleware' => 'isShop'], function () {
     Route::get('/dashboard', 'ShopController@dashboard')->name('dashboard');
     Route::get('/create-discount', 'ShopController@createDiscount')->name('discount.create');
+    Route::post('/create-discount', 'ShopController@saveDiscount')->name('discount.save');
+    Route::get('/script', 'ShopController@installScript')->name('script.install');
 });
+
+Route::get('/calculate', 'ShopController@calculateDiscount')->name('script.install');

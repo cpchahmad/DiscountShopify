@@ -10,6 +10,7 @@
     <link href="lib/Ionicons/css/ionicons.css" rel="stylesheet">
     <link href="lib/chartist/css/chartist.css" rel="stylesheet">
     <link href="lib/rickshaw/css/rickshaw.min.css" rel="stylesheet">
+    <link href="lib/select2/css/select2.min.css" rel="stylesheet">
 
     <!-- Slim CSS -->
     <link rel="stylesheet" href="css/slim.min.css">
@@ -28,7 +29,7 @@
 <script src="lib/d3/js/d3.js"></script>
 <script src="lib/rickshaw/js/rickshaw.min.js"></script>
 <script src="lib/jquery.sparkline.bower/js/jquery.sparkline.min.js"></script>
-
+<script src="lib/select2/js/select2.full.min.js"></script>
 <script src="js/ResizeSensor.js"></script>
 <script src="js/slim.js"></script>
 </body>
